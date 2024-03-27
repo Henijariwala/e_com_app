@@ -14,7 +14,7 @@ class _CartpageState extends State<Cartpage> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title:const 33 Text("Cart screen"),
+          title:const  Text("Cart screen"),
           backgroundColor: Colors.white,
           foregroundColor: Colors.black,
         ),
