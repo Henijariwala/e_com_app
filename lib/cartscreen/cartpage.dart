@@ -36,7 +36,9 @@ class _CartpageState extends State<Cartpage> {
                       image: AssetImage("${cartList[index]['image']}"),
                     ),
                   ),
+                  SizedBox(width: 10,),
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
                         "${cartList[index]['name']}",
@@ -49,7 +51,7 @@ class _CartpageState extends State<Cartpage> {
                             fontSize: 15, fontWeight: FontWeight.bold),
                       ),
                       Text(
-                        "${cartList[index]['price']}",
+                        "₹${cartList[index]['price']}",
                         style:const TextStyle(
                             fontSize: 15, fontWeight: FontWeight.bold),
                       ),

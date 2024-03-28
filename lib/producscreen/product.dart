@@ -57,6 +57,7 @@ class _ProductState extends State<Product> {
                     ],
                   ),
                 ),
+               const  SizedBox(height: 10,),
                 Row(
                   children: [
                    const SizedBox(width:10),
@@ -245,13 +246,14 @@ class _ProductState extends State<Product> {
                       color: Colors.grey,
                       fontSize: 15,
                       fontWeight: FontWeight.bold,
+                      decoration: TextDecoration.lineThrough
                     ),),
                   ],
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("${m1['price']}",style: const TextStyle(
+                    Text("₹${m1['price']}",style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 40
                     ),),

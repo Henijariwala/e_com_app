@@ -16,7 +16,7 @@ class _HomepageState extends State<Homepage> {
   bool isLaptop = true;
   int selected = 5000;
   int select = 33000;
-  RangeValues rangeValues=RangeValues(0, 1);
+  RangeValues rangeValues= const RangeValues(5,100);
 
   @override
   Widget build(BuildContext context) {
@@ -183,22 +183,22 @@ class _HomepageState extends State<Homepage> {
                   ),
                 ),
                 const SizedBox(height: 10),
-                DropdownButton(value : selected,items: const  [
-                   DropdownMenuItem(child: Text("5k"),value: 5000,),
-                   DropdownMenuItem(child: Text("10k"),value: 10000,),
-                   DropdownMenuItem(child: Text("15k"),value: 15000,),
-                ], onChanged: (value){
-                  setState(() {
-                    selected=value!;
-                  });
-                },
-                ),
+                // DropdownButton(value : selected,items: const  [
+                //    DropdownMenuItem(child: Text("5k"),value: 5000,),
+                //    DropdownMenuItem(child: Text("10k"),value: 10000,),
+                //    DropdownMenuItem(child: Text("15k"),value: 15000,),
+                // ], onChanged: (value){
+                //   setState(() {
+                //     selected=value!;
+                //   });
+                // },
+                // ),
                 Text("${rangeValues.start.toInt()}-${rangeValues.end.toInt()}"),
                const  SizedBox(width: 10,),
 
                 RangeSlider(values: rangeValues,
                     max: 100000,
-                    divisions: 10,
+                    //divisions: 20,
                     onChanged: (value) {
                       setState(() {
                         rangeValues=value;
@@ -265,7 +265,7 @@ class _HomepageState extends State<Homepage> {
                                     Row(
                                       children: [
                                         Text(
-                                          "${mobileList[index]['price']}",
+                                          "₹${mobileList[index]['price']}",
                                           style: const TextStyle(
                                               fontWeight: FontWeight.bold),
                                         ),
@@ -282,16 +282,16 @@ class _HomepageState extends State<Homepage> {
                   ),
                 ),
                 const SizedBox(height: 10),
-                DropdownButton(value : select,items: const [
-                   DropdownMenuItem(child: Text("33k"),value: 33000,),
-                   DropdownMenuItem(child: Text("57k"),value: 57000,),
-                   DropdownMenuItem(child: Text("1l"),value: 100000,),
-                ], onChanged: (value){
-                  setState(() {
-                    select=value!;
-                  });
-                },
-                ),
+                // DropdownButton(value : select,items: const [
+                //    DropdownMenuItem(child: Text("33k"),value: 33000,),
+                //    DropdownMenuItem(child: Text("57k"),value: 57000,),
+                //    DropdownMenuItem(child: Text("1l"),value: 100000,),
+                // ], onChanged: (value){
+                //   setState(() {
+                //     select=value!;
+                //   });
+                // },
+                // ),
                 // Laptop
                 const SizedBox(height: 5),
                 SingleChildScrollView(
@@ -356,7 +356,7 @@ class _HomepageState extends State<Homepage> {
                                           Row(
                                             children: [
                                               Text(
-                                                  "${laptopList[index]['price']}",
+                                                  "₹${laptopList[index]['price']}",
                                                   style: const TextStyle(
                                                       fontWeight:
                                                           FontWeight.bold)),

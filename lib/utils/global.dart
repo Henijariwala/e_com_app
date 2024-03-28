@@ -8,10 +8,10 @@ List <Map> mobileList = [
 List mobile =["SmartPhone","Laptop","Earbuds","HeadPhone"];
 
 List<Map>laptopList =[
-  {"name":"MacBook Por", "price":115900,"rating":"5.1","image":"assets/image/macbook.png"},
-  {"name":"Lenovo IdeaPad", "price":56999,"rating":"4.1","image":"assets/image/lenovo.png"},
-  {"name":"Acer Aspire_Lite", "price":32999,"rating":"4.0","image":"assets/image/acer.png"},
-  {"name":"ASUS VivoBook_15", "price":32490,"rating":"3.8","image":"assets/image/asus.png"},
+  {"name":"HP", "price":55999,"rating":"5.1","image":"assets/image/hp.png"},
+  {"name":"Lenovo IdeaPad", "price":56999,"rating":"4.1","image":"assets/image/Lenovo1.png"},
+  {"name":"Acer Aspire_Lite", "price":32999,"rating":"4.0","image":"assets/image/Acer3.png"},
+  {"name":"ASUS VivoBook", "price":32490,"rating":"3.8","image":"assets/image/Asus1.png"},
 ];
 
 List <Map> cartList = [];
